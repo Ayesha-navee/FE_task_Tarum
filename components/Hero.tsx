@@ -50,14 +50,14 @@ const metrics: Metric[] = [
 function NavLink({ icon: Icon, label, active }: NavItem) {
   return (
     <div
-      className={`flex items-center gap-2 px-3 py-2 rounded-lg text-xs sm:text-sm font-medium transition-colors ${
+      className={`flex items-center justify-center sm:justify-start gap-0 sm:gap-2 px-2 sm:px-3 py-2 rounded-lg text-xs sm:text-sm font-medium transition-colors shrink-0 ${
         active
           ? 'bg-purple-100 text-purple-700'
           : 'text-gray-400 hover:text-gray-600'
       }`}
     >
-      <Icon className="w-4 h-4" strokeWidth={2} />
-      <span>{label}</span>
+      <Icon className="w-4 h-4 shrink-0" strokeWidth={2} />
+      <span className="hidden sm:inline truncate">{label}</span>
     </div>
   );
 }
@@ -170,13 +170,13 @@ export default function Hero() {
               {/* Sidebar and Header */}
               <div className="flex gap-3 sm:gap-4 mb-6 md:mb-8">
                 {/* Sidebar */}
-                <div className="flex flex-col gap-3 w-16 sm:w-24 shrink-0">
+                <div className="flex flex-col gap-3 w-10 sm:w-24 shrink-0">
                   <Image
                     src="/mainLogo.png"
                     alt="PYME Logo"
                     width={48}
                     height={48}
-                    className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg mb-1"
+                    className="w-8 h-8 sm:w-12 sm:h-12 rounded-lg mb-1"
                   />
                   <div className="flex flex-col gap-1">
                     {navItems.map((item) => (

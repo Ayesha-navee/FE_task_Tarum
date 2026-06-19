@@ -24,9 +24,9 @@ export default function Header({ onMenuToggle }: HeaderProps) {
             <Image
               src="/mainLogo.png"
               alt="PYME Logo"
-              width={80}
-              height={50}
-              className="w-20 h-12 md:w-14 md:h-14"
+             width={160}
+              height={48}
+              className="h-8 md:h-10 w-auto"
               priority
             />
           </div>
