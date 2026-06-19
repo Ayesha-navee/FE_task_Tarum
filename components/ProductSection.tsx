@@ -10,13 +10,13 @@ export default function ProductSection() {
           {/* Left Content */}
           <div className="space-y-6 md:space-y-8">
             {/* Icon */}
-            <div className="w-16 h-16 md:w-20 md:h-20 rounded-2xl flex items-center justify-center">
+            <div className="w-16 h-16 md:w-20 md:h-20 rounded-full bg-purple-500 flex items-center justify-center shadow-md">
               <Image
                 src="/productLogo.png"
                 alt="Product Logo"
-                width={80}
-                height={80}
-                className="w-16 h-16 md:w-20 md:h-20"
+                width={50}
+                height={50}
+                className="w-9 h-9 md:w-11 md:h-11"
               />
             </div>
 

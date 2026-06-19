@@ -1,7 +1,5 @@
 'use client';
-
 import Image from 'next/image';
-
 export default function TeamSection() {
   return (
     <section className="gradient-section">
@@ -10,21 +8,19 @@ export default function TeamSection() {
           {/* Left Content */}
           <div className="space-y-6 md:space-y-8">
             {/* Icon */}
-            <div className="w-16 h-16 md:w-20 md:h-20 rounded-2xl flex items-center justify-center">
+            <div className="w-16 h-16 md:w-20 md:h-20 rounded-full bg-cyan-500 flex items-center justify-center shadow-md">
               <Image
                 src="/teamsLogo.png"
                 alt="Teams Logo"
                 width={50}
                 height={50}
-                className="w-16 h-16 md:w-20 md:h-20"
+                className="w-9 h-9 md:w-11 md:h-11"
               />
             </div>
-
             {/* Heading */}
             <h3 className="text-3xl md:text-4xl font-bold text-gray-900">
               Team
             </h3>
-
             {/* Description Points */}
             <div className="space-y-4 text-gray-700">
               <p>
@@ -37,7 +33,6 @@ export default function TeamSection() {
                 Tells you who needs a conversation today. You lead people with clarity. Not assumptions.
               </p>
             </div>
-
             {/* Highlight */}
             <div className="border-l-4 border-cyan-500 pl-4 py-2">
               <p className="text-cyan-600 font-semibold">
@@ -45,7 +40,6 @@ export default function TeamSection() {
               </p>
             </div>
           </div>
-
           {/* Right Content - Illustration */}
           <div className="relative h-96 md:h-full min-h-96">
             <div className="bg-gradient-to-br from-cyan-50 to-purple-50 rounded-3xl p-8 md:p-12 shadow-xl h-full flex items-center justify-center overflow-hidden">
